@@ -85,7 +85,8 @@ function findByIdAndUpdate(id, updatedValues, collection) {
   for (const key in updatedValues) {
     //if obj hasown then... update existing key in object
     if (obj.hasOwnProperty(key)) {
-        //! USE this to understand how the for loop iterates through "key": console.log(key);
+        // USE the console.log below to understand how the for loop iterates through "key":
+        // console.log(key);
       obj[key] = updatedValues[key];
     }
   }
